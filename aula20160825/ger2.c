@@ -3,10 +3,9 @@
 int main()
 {
     srand (time (0));
-    int n,v;
+    int n,v,i=0;
 
     v = ("%d", rand()%100);
-    printf("\n Numero sorteiado %d\n",v);
 
     do
     {
@@ -18,11 +17,13 @@ int main()
                 if (n<v)
                 {
                     printf("\n BAIXO! \n");
+                    i++;
                 }
                 else
                     if (n>v)
                     {
                         printf("\n ALTO! \n");
+                        i++;
                     }
                     else
                         {
@@ -31,5 +32,7 @@ int main()
                         }
             }
     } while (n!=v);
+
+    printf("\n Numero de tentativas %d",i+1);
     return 0;
 }
