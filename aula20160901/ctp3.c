@@ -1,22 +1,24 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<ctype.h>
 int main()
 {
-    char frase [500];
-    int i,numeroletras;
-    printf("\n Digite uma mensagem \n");
-    gets (frase);
-
-    for(i=0; frase[i]!='\0';i++)
-    {
-        if (isalpha(frase[i]))
+    char frase[256];
+    char olheiro;
+    int indice = 0;
+    int contador=0;
+    printf("\n Digite uma mensagem: \n");
+    gets(frase);
+    olheiro = frase[indice];
+    while(olheiro !='\0')
         {
-            numeroletras = i;
+            if(isalpha(olheiro))
+            {
+                contador++;
+            }
+            indice ++;
+            olheiro = frase[indice];
 
-        }
-    }
-
-    printf("\n A mensagem tem %d letras",numeroletras);
-    return 0;
+}
+printf("\n a mensagem possui %d letras\n", contador);
+return 0;
 }
