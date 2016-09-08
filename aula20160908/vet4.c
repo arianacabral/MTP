@@ -4,7 +4,7 @@
 int main ()
 {
     srand(time(0));
-    int vet[10], soma=0, produto=1, i;
+    int vet[100];
     int n;
     printf("\n Digite um numero inteiro entre 1 e 1000: \n");
 
