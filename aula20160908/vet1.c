@@ -21,6 +21,6 @@ int main ()
     }
 
     media = soma / N;
-    printf("Media: %f \n", media);
+    printf("\n Media: %f \n", media);
     return 0;
 }
