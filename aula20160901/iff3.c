@@ -1,21 +1,21 @@
+#include<math.h>
 #include<stdio.h>
-#include<stdlib.h>
-int main ()
+int main()
 {
-    int numero,i;
-    float n1,soma1;
-    double n2,soma2;
-    printf("\n Informe um numero \n");
-    scanf("%d",&numero);
-
-    n1 = (1/numero)+ numero;
-    n2 = (1/numero)+ numero;
-
-    for (i=0;i<730;i++)
-    {
-        soma1= soma1 + n1;
-    }
-
-    printf("\n Soma1 %.15g \n",soma1);
-    return 0;
+  float inv,inv2=0;
+  double invert,invert2=0;
+  int n,i=0;
+  printf("Um numero inteiro: ");
+  scanf("%d",&n);
+  inv=1.f/n;
+  invert=1.0/n;
+  while(i<729)
+  {
+    inv2=inv+inv2;
+    invert2=invert+invert2;
+    i++;
+  }
+  printf("\n Numero float: %.15f",inv2);
+  printf("\n Numero double: %.15f",invert2);
+  return 0;
 }
