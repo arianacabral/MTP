@@ -5,10 +5,13 @@ int main()
   float inv,inv2=0;
   double invert,invert2=0;
   int n,i=0;
-  printf("Um numero inteiro: ");
+  printf("\n Um numero inteiro: \n");
   scanf("%d",&n);
+  
   inv=1.f/n;
+  
   invert=1.0/n;
+  
   while(i<729)
   {
     inv2=inv+inv2;
