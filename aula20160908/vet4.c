@@ -7,7 +7,6 @@ int main ()
     int vet[100];
     int n;
     printf("\n Digite um numero inteiro entre 1 e 1000: \n");
-
-
+    scanf("%d",n);
     return 0;
 }
