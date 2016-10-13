@@ -37,7 +37,7 @@ int main()
         }
 
     }while(op!=5);
-    free(numeros);//liberando da memoria
+    free(numeros);//liberando a memoria
     return 0;
 }
 int recebenumeros(int *numeros,int n) // funcao recebe o ponteiro do vetor e o tamanho do vetor dos numeros
