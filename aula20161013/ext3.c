@@ -44,15 +44,10 @@ int main()
     }
     printf("\n Centroide (%g,%g) \n", (somax/n),(somay/n));
 
-    for (i=0;i<n;i++)
-    {
-        a1 = a1 + (pt.pontos[i].x*pt.pontos[i+1].y);
-        a2 = a2 - (pt.pontos[i].y*pt.pontos[i+1].x);
-    }
-    printf("\n A1 %g \n", a1);
-    printf("\n A1 %g \n", a2);
-    area = ((a1+ pt.pontos[i+2].x*pt.pontos[i].y)-(a2+ pt.pontos[i+2].y*pt.pontos[i].x))/2;
+    area = somax;
     printf("\n Area %g \n", area);
+    free(pt.pontos);
+    free(pt.pontos);
     return 0;
 }
 
